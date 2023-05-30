@@ -1,0 +1,45 @@
+// Fonts Famaly
+@import '../fonts/HelveticaNeue/stylesheet.css';
+@import '../fonts/Roboto/stylesheet.css';
+
+@import './normalizer';
+@import './variables';
+@import './helpers';
+
+@import './wrapper';
+@import './header';
+@import './footer';
+@import './navigation';
+
+// Commons
+@import './common/form';
+@import './common/input';
+@import './common/modal';
+@import './common/button';
+@import './common/dropdown';
+@import './common/line';
+@import './common/slider';
+
+// UI Employee
+// @import './uiEmployee/job';
+
+// UI Organization
+// @import './uiOrganization/newTask';
+
+// UI Landing
+@import './uiLanding/home-page/home';
+@import './uiLanding/home-page/intro';
+@import './uiLanding/home-page/aboutUs';
+@import './uiLanding/home-page/advantages';
+@import './uiLanding/home-page/gallery';
+@import './uiLanding/home-page/contacts';
+
+@import './uiLanding/device/device';
+
+@import './uiLanding/catalog';
+
+// Slides
+@import './uiLanding/slides/locks';
+@import './uiLanding/slides/categories';
+@import './uiLanding/slides/partners';
+@import './uiLanding/slides/projects';

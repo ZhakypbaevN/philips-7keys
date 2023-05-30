@@ -1,0 +1,35 @@
+.form {
+  &-inputs {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
+    margin-bottom: 40px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+  &-label {
+    font-weight: 400;
+    font-size: 16px;
+
+    & span {
+      color: $red-color;
+    }
+  }
+  &-checkboxlist {
+    display: inline-flex;
+    grid-gap: 15px;
+  }
+  &-itemsCount {
+    color: $gray-color;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  &-footer {
+    display: flex;
+    grid-gap: 25px;
+  }
+}
+  

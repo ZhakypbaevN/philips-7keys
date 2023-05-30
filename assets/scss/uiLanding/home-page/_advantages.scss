@@ -1,0 +1,29 @@
+.advantages {
+  background: url('../images/advantages-bg.jpg') center no-repeat;
+  background-size: cover;
+
+  &-inner {
+    padding: 75px 0 90px;
+  }
+
+  & .wrapper-title {
+    color: white;
+  }
+
+  &-item {
+    display: flex;
+    grid-gap: 10px;
+    margin-bottom: 14px;
+
+    & svg {
+      display: block;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &-text {
+    padding-top: 4px;
+    color: white;
+  }
+}

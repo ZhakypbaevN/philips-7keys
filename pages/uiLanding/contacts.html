@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../assets/css/index.min.css">
+  <title>Электронные замки Philips</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-inner">
+        <div class="header-col">
+          <a class="header-logo" href="#">
+            <img src="../../assets/images/logo.svg" alt="">
+          </a>
+          <a class="header-link line" href="../../index.html">
+            <p class="header-text">Главная</p>
+          </a>
+          <a class="header-link line" href="./catalog.html">
+            <p class="header-text">Каталог</p>
+          </a>
+          <a class="header-link line" href="./services.html">
+            <p class="header-text">Услуги</p>
+          </a>
+        </div>
+
+        <div class="header-col">
+          <a class="header-link line" href="./contacts.html">
+            <p class="header-text">Контакты</p>
+          </a>
+          <a class="header-link line" href="#">
+            <p class="header-text">Войти</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="wrapper-title">Контакты</div>
+
+    <div class="contacts-block top">
+      <div class="contacts-data">
+        <a href="#" class="contacts-link line">
+          <p>+7 705 773 10 30</p>
+        </a>
+        <a href="#" class="contacts-link line">
+          <p>+7 727 220 6005</p>
+        </a>
+        <a href="#" class="contacts-link line">
+          <p>info@7keys.kz</p>
+        </a>
+        <p>Пн - Пт 8:00 - 19:00</p>
+        <p>Сб 8:00 - 19:00</p>
+      </div>
+
+
+      <div class="contacts-form">
+        <div class="contacts-form-top">
+          <input type="text" placeholder="Ваше имя"/>
+          <input type="text" placeholder="Ваш телефон номер"/>
+        </div>
+          <textarea placeholder="Комментарии"></textarea>
+
+        <button class="filled">Отправить заявку</button>
+      </div>
+    </div>
+
+    <div class="contacts-block">
+      <p>г. Алматы, <br> улица Ауэзова, 130</p>
+
+      <div id="map" class="contacts-map">
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <a class="footer-logo" href="#">
+            <svg><use xlink:href="../../assets/images/sprite.svg#logo-white"></use></svg>
+          </a>
+          <p class="footer-text">2023 ТОО 7keys.kz</p>
+          <p class="footer-text">© Все права защищены</p>
+        </div>
+        <div class="footer-col">
+          <a class="footer-link line white" href="#">
+            <p class="footer-text">Главная</p>
+          </a>
+          <a class="footer-link line white" href="#">
+            <p class="footer-text">Каталог</p>
+          </a>
+          <a class="footer-link line white" href="#">
+            <p class="footer-text">Контакты</p>
+          </a>
+          <a class="footer-link line white" href="#">
+            <p class="footer-text">Корзина</p>
+          </a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-text">Алматы, Ауэзова 130</p>
+          <p class="footer-text">Пн - Пт 9:00 - 18:00 <br> Сб 9:00 - 15:00</p>
+          <a class="footer-link line white" href="#">
+            <p class="footer-text">+7 727 220 6005</p>
+          </a>
+          <a class="footer-link line white" href="#">
+            <p class="footer-text">+7 705 773 10 30</p>
+          </a>
+          <a class="footer-link line white" href="#">
+            <p class="footer-text">info@7keys.kz</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+	</script>
+  <script>
+    let center = [43.228388, 76.905840];
+
+    function init() {
+      let map = new ymaps.Map('map', {
+        center: center,
+        zoom: 17
+      });
+
+      map.controls.remove('geolocationControl'); // удаляем геолокацию
+      map.controls.remove('searchControl'); // удаляем поиск
+      map.controls.remove('trafficControl'); // удаляем контроль трафика
+      map.controls.remove('typeSelector'); // удаляем тип
+      map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+      map.controls.remove('rulerControl'); // удаляем контрол правил
+      map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+    }
+
+    ymaps.ready(init);
+  </script>
+</body>
+</html>

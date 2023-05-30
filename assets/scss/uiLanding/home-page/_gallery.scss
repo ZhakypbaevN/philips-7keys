@@ -1,0 +1,103 @@
+.gallery {
+  &-inner {
+    display: flex;
+    align-items: center;
+    grid-gap: 60px;
+  }
+
+  &-photos {
+    width: 720px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &-photo {
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &-col {
+    & .wrapper-title {
+      margin-bottom: 14px;
+    }
+
+    & p {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-link {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 28px;
+    color: $primary-color;
+  }
+}
+
+
+.review {
+  &-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 22px;
+  }
+
+  &-authorBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  &-author {
+    display: flex;
+    align-items: center;
+    grid-gap: 14px;
+
+    &-avatar {
+      display: block;
+      height: 50px;
+      width: 50px;
+
+      border-radius: 50%;
+    }
+
+    &-name {
+      font-family: 'Helvetica Neue';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.4;
+      color: $primary-color;
+    }
+  }
+
+  &-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    &-stars {
+      display: flex;
+      grid-gap: 12px;
+
+      & svg {
+        display: block;
+        height: 18px !important;
+        width: 18px !important;
+      }
+    }
+
+    &-count {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1;
+      color: $gray-color;
+    }
+  }
+
+  &-commet {
+    font-family: 'Helvetica Neue';
+  }
+}

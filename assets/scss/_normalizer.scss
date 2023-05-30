@@ -1,0 +1,108 @@
+body{
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 14px;
+  color: #070917;
+
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+
+  overflow-y: overlay;
+  overflow-x: hidden;
+
+  &.no-scroll{
+      overflow: hidden;
+  }
+}
+
+#app{
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+*,
+*:hover,
+*:after {
+  box-sizing: border-box;
+  font-family: 'HelveticaNeue', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, div, span{
+  cursor: default;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 900;
+}
+
+p {
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 24px;
+  margin: 0;
+  & li{
+      color: #212121;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 0 !important;
+  }
+}
+
+a,
+input,
+button{
+  font-family: 'HelveticaNeue', sans-serif;
+  text-decoration: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  & *{
+      cursor: pointer !important;
+  }
+}
+
+a button {
+  pointer-events: none;
+}
+
+input{
+  cursor: text;
+}
+textarea:focus,
+input:focus,
+button:focus{
+  outline: none;
+}
+
+button{
+  font-weight: 500;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+a{
+  color: #070917;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+img,
+.img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

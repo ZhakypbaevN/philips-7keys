@@ -1,0 +1,12 @@
+.aboutUs {
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 40px;
+  }
+
+  & p {
+    margin-bottom: 10px;
+  }
+}

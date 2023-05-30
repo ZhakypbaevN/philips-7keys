@@ -1,0 +1,50 @@
+.device {
+  &-intro {
+    display: grid;
+    grid-template-columns: 520px 1fr;
+    grid-gap: 40px;
+  }
+
+  &-preview {
+    &-big {
+      padding-bottom: 77%;
+      background-color: grey;
+      border: 1px solid #E7E7E7;
+
+      margin-bottom: 10px;
+      position: relative;
+
+      &
+
+      & button {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+
+        & svg {
+          height: 48px !important;
+          width: 48px !important;
+        }
+      }
+    }
+
+    &-item {
+      height: 80px;
+      width: 80px;
+
+      &.big {
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &-slider {
+      display: flex;
+      grid-gap: 16px;
+    }
+  }
+}

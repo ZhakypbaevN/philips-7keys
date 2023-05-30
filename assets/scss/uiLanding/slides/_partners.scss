@@ -1,0 +1,21 @@
+.partners {
+  &-inner {
+    display: flex;
+    grid-gap: 75px;
+  }
+
+  &-item {
+    display: block;
+    height: 105px;
+    width: 210px;
+
+    filter: grayscale(1);
+    opacity: .6;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+}

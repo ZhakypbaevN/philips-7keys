@@ -1,0 +1,108 @@
+input,
+textarea {
+  width: 100%;
+  color: $primary-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+
+  width: 100%;
+  
+  padding: 14px 12px;
+  border: 1.2px solid #ADADAD;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $gray-color;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+textarea {
+  min-height: 135px;
+}
+
+
+.inputCheckbox {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+
+  & input[type='checkbox'],
+  & input[type='radio'] {
+    display: block;
+    height: 28px;
+    width: 28px;
+
+    cursor: pointer;
+
+    border: 1px solid $gray-light-color;
+    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  & label {
+    font-weight: 400;
+    font-size: 16px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.inputDropFile {
+  max-width: 875px;
+  & input[type='file'] {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  & .drop-file {
+    height: 135px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0 100px;
+    margin-bottom: 5px;
+    
+    border-radius: 10px;
+    border: 1px solid $gray-light-color;
+    
+    & p.text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: center;
+
+      color: rgba(rgba($accent-color, 0.1), 0.3);
+    }
+  }
+  & label {
+    display: inline-flex;
+    align-items: center;
+    grid-gap: 10px;
+
+    padding: 7px 20px;
+      background: rgba($accent-color, 0.1);
+      border-radius: 10px;
+
+    & svg {
+      display: block;
+      height: 28px;
+      width: 28px;
+
+      fill: transparent;
+    }
+
+    & p.text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      color: $accent-color;
+    }
+  }
+}

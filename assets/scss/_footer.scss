@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 70px;
+  padding: 40px 0 60px;
+  background-color: $primary-color;
+
+  &-inner {
+    display: grid;
+    grid-template-columns: 40% 30% 25%;
+    justify-content: space-between;
+  }
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-logo {
+    display: block;
+    height: 62px;
+    width: 114px;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  &-link {
+    display: inline-block;
+    color: white;
+    margin-bottom: 12px;
+    
+    & .footer-text {
+      margin-bottom: 0;
+    }
+  }
+}
