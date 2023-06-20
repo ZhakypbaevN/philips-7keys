@@ -1,0 +1,56 @@
+.aboutSafe {
+  & .wrapper {
+    &-header-withSb {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &-title,
+    &-subtitle {
+      text-align: center;
+    }
+    &-subtitle {
+      max-width: 600px;
+    }
+  }
+  &-inner {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    grid-gap: 60px;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 48px 65px;
+  }
+
+  &-preview {
+    padding-bottom: 100%;
+    background-color: $gray-light-color;
+  }
+
+  &-item {
+    &-icon {
+      height: 48px;
+      width: 49px;
+      border-radius: 50%;
+      background-color: $gray-light-color;
+
+      margin-bottom: 14px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.2;
+
+      margin-bottom: 14px;
+    }
+
+    &-description {
+      line-height: 1.4;
+    }
+  }
+}

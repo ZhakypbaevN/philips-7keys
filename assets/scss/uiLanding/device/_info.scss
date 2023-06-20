@@ -1,0 +1,193 @@
+.deviceInfo {
+  &-inner {
+    display: grid;
+    grid-template-columns: 1fr 370px;
+    grid-gap: 50px;
+    
+    padding-top: 40px;
+    border-top: 1px solid #DADADA;
+  }
+  &-main {
+    &-titles {
+      display: flex;
+      grid-gap: 132px;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.1;
+
+      margin-bottom: 32px;
+      position: relative;
+
+      &.active {
+        font-weight: 500;
+        &::after {
+          background-color: $primary-color;
+        }
+      }
+
+      &::after {
+        content: '';
+
+        display: block;
+        height: 2px;
+        width: 100%;
+
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+
+        background-color: transparent;
+      }
+    }
+  }
+  &-description * {
+    line-height: 1.2;
+  }
+  &-review {
+    margin-bottom: 26px;
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    &-author {
+      display: flex;
+      align-items: center;
+      grid-gap: 18px;
+
+      &-avatar {
+        height: 40px;
+        width: 40px;
+        background-color: $gray-light-color;
+        border-radius: 50%;
+      }
+
+      &-name {
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+    &-rating {
+      display: flex;
+      align-items: center;
+      grid-gap: 18px;
+
+      &-stars {
+        display: flex;
+        grid-gap: 4px;
+    
+        & svg {
+          display: block;
+          height: 11px;
+          width: 11px;
+        }
+      }
+
+      &-date {
+        color: $gray-color;
+      }
+    }
+  }
+  &-specifications {
+    &-block {
+      margin-bottom: 30px;
+    }
+    &-block:last-child {
+      margin-bottom: 0;
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    & span {
+      font-weight: 400;
+      font-size: 16px;
+    }
+    &-dotsBox{
+      flex: 1;
+      position: relative;
+
+      &::after {
+        content: '';
+
+        background: url('../images/dot.svg') left;
+
+        display: block;
+        width: 100%;
+        height: 3px;
+
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+      }
+    }
+  }
+  &-youtube {
+    padding-bottom: 56.2%;
+    margin-bottom: 22px;
+    position: relative;
+
+    & iframe {
+      width: 100% !important;
+      height: 100% !important;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &-docs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 14px 18px;
+
+    border: 1px solid #9E9E9E;
+    border-radius: 3px;
+
+    transition: all ease-in-out .3s;
+
+    & svg {
+      display: block;
+      height: 38px;
+      width: 38px;
+
+      fill: #CDCDCD;
+
+      transition: all ease-in-out .3s;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.2;
+
+      transition: all ease-in-out .3s;
+    }
+
+    &:hover {
+      background-color: rgba($accent-color, .05);
+      border-color: $accent-color;
+      & svg {
+        fill: $accent-color;
+      }
+
+      & .deviceInfo-docs-title {
+        color: $accent-color;
+      }
+    }
+  }
+}

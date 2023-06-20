@@ -1,0 +1,138 @@
+.deviceIntro {
+  &-inner {
+    display: grid;
+    grid-template-columns: 520px 1fr;
+    grid-gap: 40px;
+  }
+  &-preview {
+    &-big {
+      padding-bottom: 77%;
+      background-color: white;
+      border: 1px solid #E7E7E7;
+
+      margin-bottom: 10px;
+      position: relative;
+
+      & button.zoom {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+
+        & svg {
+          height: 48px !important;
+          width: 48px !important;
+        }
+      }
+    }
+
+    &-item {
+      height: 80px;
+      width: 80px;
+      border: 1px solid #E7E7E7;
+
+      &.big {
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        & img {
+          height: 100%;
+          width: auto;
+
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &-slider {
+      display: flex;
+      grid-gap: 16px;
+    }
+  }
+  &-categories {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+
+    margin-bottom: 8px;
+
+    &-item {
+      font-size: 14px;
+      color: $primary-color;
+
+      padding: 0px 8px;
+
+      background: #EEF0F2;
+      border-radius: 6px;
+    }
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+  }
+  &-prices {
+    display: flex;
+    grid-gap: 40px;
+
+    margin-bottom: 25px;
+
+    &-now {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: $accent-color;
+    }
+
+    &-old {
+      font-family: 'Roboto';
+      font-size: 18px;
+      line-height: 1.4;
+      color: $gray-color;
+      position: relative;
+
+      &::after {
+        content: '';
+
+        display: block;
+        height: 1.8px;
+        width: 120%;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-color: $gray-color;
+      }
+    }
+  }
+  &-content-btns {
+    display: flex;
+    grid-gap: 15px;
+
+    & button {
+      height: 52px;
+
+      &.filled {
+        width: 315px;
+      }
+
+      &.favorite {
+        height: 52px;
+        width: 52px;
+  
+        border: 1.4px solid $primary-color;
+        border-radius: 6px;
+      }
+    }
+  }
+}

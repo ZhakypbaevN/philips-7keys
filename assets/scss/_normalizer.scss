@@ -1,5 +1,5 @@
 body{
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: 'Source Sans Pro';
   font-size: 14px;
   color: #070917;
 
@@ -27,7 +27,7 @@ body{
 *:hover,
 *:after {
   box-sizing: border-box;
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: 'Source Sans Pro';
 }
 
 h1, h2, h3, h4, h5, h6, p, li, div, span{
@@ -36,14 +36,15 @@ h1, h2, h3, h4, h5, h6, p, li, div, span{
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: 'Source Sans Pro';
   font-weight: 900;
 }
 
 p {
+  font-family: 'Source Sans Pro';
   color: #212121;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.2;
   margin: 0;
 }
 
@@ -63,7 +64,7 @@ ul {
 a,
 input,
 button{
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: 'Source Sans Pro';
   text-decoration: none;
   border: 0;
   margin: 0;

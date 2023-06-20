@@ -1,11 +1,10 @@
-$('#intro-locks').slick({
+$('#intro-slider').slick({
   dots: true,
   infinite: true,
   speed: 500,
-  fade: true,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 10000,
+  arrows: true,
+  // autoplay: true,
+  // autoplaySpeed: 10000,
   cssEase: 'linear'
 });
 
@@ -16,5 +15,14 @@ $('#partners').slick({
   autoplay: true,
   speed: 500,
   autoplaySpeed: 500,
+});
+
+$('#categories-list').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
 });
 

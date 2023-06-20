@@ -1,6 +1,7 @@
 // Fonts Famaly
-@import '../fonts/HelveticaNeue/stylesheet.css';
+@import '../fonts/Lora/stylesheet.css';
 @import '../fonts/Roboto/stylesheet.css';
+@import '../fonts/SourceSansPro/stylesheet.css';
 
 @import './normalizer';
 @import './variables';
@@ -32,9 +33,13 @@
 @import './uiLanding/home-page/aboutUs';
 @import './uiLanding/home-page/advantages';
 @import './uiLanding/home-page/gallery';
+@import './uiLanding/home-page/aboutSafe';
 @import './uiLanding/home-page/contacts';
 
-@import './uiLanding/device/device';
+@import './uiLanding/device/intro';
+@import './uiLanding/device/info';
+@import './uiLanding/device/features';
+@import './uiLanding/device/footer';
 
 @import './uiLanding/catalog';
 

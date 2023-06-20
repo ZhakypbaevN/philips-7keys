@@ -10,82 +10,143 @@
   <title>Электронные замки Philips </title>
 </head>
 <body class="main">
-  <header class="header header-main" style="position: fixed;">
+  <!-- Header -->
+  <header class="header header-main big">
     <div class="wrapper">
       <div class="header-inner">
         <div class="header-col">
           <a class="header-logo" href="#">
             <img src="./assets/images/logo.svg" alt="">
           </a>
-          <a class="header-link line white" href="#">
+          <a class="header-link line desktop" href="#">
             <p class="header-text">Главная</p>
           </a>
-          <a class="header-link line white" href="./pages/uiLanding/catalog.html">
-            <p class="header-text">Каталог</p>
-          </a>
-          <a class="header-link line white" href="./pages/uiLanding/services.html">
+          <div class="header-catalog-wrapper desktop">
+            <a class="header-link" href="./pages/uiLanding/catalog.html">
+              <p class="header-text">Каталог</p>
+              <svg><use xlink:href="./assets/images/sprite.svg#arrow-down"></use></svg>
+            </a>
+            <div class="header-catalog">
+              <div class="wrapper">
+                <div class="header-catalog-inner">
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="./assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="./assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="./assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="./assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="./assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="header-link line desktop" href="./pages/uiLanding/services.html">
             <p class="header-text">Услуги</p>
           </a>
         </div>
 
-        <div class="header-col">
-          <a class="header-link line white" href="/pages/uiLanding/contacts.html">
+        <div class="header-col desktop">
+          <div class="header-lang">
+            <button class="header-lang-btn">
+              <p class="header-text">RU</p>
+              <svg><use xlink:href="./assets/images/sprite.svg#arrow-down"></use></svg>
+            </button>
+
+            <div class="header-lang-dropdown">
+              <button class="header-lang-option active">
+                <p>RU</p>
+              </button>
+              <button class="header-lang-option">
+                <p>KZ</p>
+              </button>
+            </div>
+          </div>
+          <a class="header-link line" href="/pages/uiLanding/contacts.html">
             <p class="header-text">Контакты</p>
           </a>
-          <a class="header-link line white" href="#">
+          <a class="header-link line" href="#">
             <p class="header-text">Войти</p>
           </a>
         </div>
       </div>
     </div>
   </header>
+   <!-- / Header -->
 
-
+  <!-- Intro -->
   <section class="intro">
-    <div class="wrapper">
-      <div class="intro-inner">
-        <div class="intro-col">
-          <h1 class="intro-title">Электронные замки <br> Philips</h1>
-          <p class="intro-text">Умные решения “Вашей безопасности”</p>
-  
-          <div class="intro-bottom">
-            <button class="intro-btn">Заказать</button>
-            <div class="intro-contacts">
-              <p class="intro-contacts-text">г.Алматы, <br> улица Ауэзова, 130</p>
-              <div class="line"></div>
-              <p class="intro-contacts-text">Пн - Пт <br> 9:00 - 18:00</p>
+    <div class="intro-slider" id="intro-slider">
+      <div class="intro-slide" style="background-image: url(./assets/images/intro/intro-bg.jpg)">
+        <div class="wrapper">
+          <div class="intro-inner">
+            <div class="intro-col">
+              <h1 class="intro-title">Электронные замки <br> Philips</h1>
+              <p class="intro-text">Умные решения “Вашей безопасности”</p>
+      
+              <div class="intro-bottom">
+                <button class="intro-btn">Посмотреть</button>
+                <div class="intro-contacts">
+                  <p class="intro-contacts-text">г.Алматы, <br> улица Ауэзова, 130</p>
+                  <div class="line"></div>
+                  <p class="intro-contacts-text">Пн - Пт <br> 9:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="intro-preview">
+              <img src="./assets/images/intro/intro-slide-keys.png" alt="">
             </div>
           </div>
         </div>
-        <div class="intro-preview" id="intro-locks">
-          <img src="./assets/images/intro/intro-1.png" alt="">
-          <img src="./assets/images/intro/intro-2.png" alt="">
-          <img src="./assets/images/intro/intro-3.png" alt="">
-        </div>
+      </div>
+
+      <div class="intro-slide">
+        <div class="intro-slide-inner" style="background-image: url(./assets/images/intro/slide-3.jpg);"></div>
+      </div>
+
+      <div class="intro-slide">
+        <div class="intro-slide-inner" style="background-image: url(./assets/images/intro/slide-4.jpg);"></div>
+      </div>
+
+      <div class="intro-slide">
+        <div class="intro-slide-inner" style="background-image: url(./assets/images/intro/slide-5.jpg);"></div>
+      </div>
+
+      <div class="intro-slide">
+        <div class="intro-slide-inner" style="background-image: url(./assets/images/intro/slide-6.jpg);"></div>
       </div>
     </div>
   </section>
-  
-  <section class="aboutUs">
-    <div class="wrapper">
-      <div class="aboutUs-inner">
-        <img src="./assets/images/about-us.jpg" alt="">
-        <div class="aboutUs-col">
-          <h2 class="wrapper-title">Сделай шаг к безопасности с Philips</h2>
+  <!-- / Intro -->
 
-          <div class="aboutUs-texts">
-            <p>
-              Philips - это бренд, на который можно положиться. Наши замки разработаны с использованием передовых технологий и протестированы на прочность и надежность. Мы гарантируем, что наши замки защитят вас и вашу семью от любых угроз.
-            </p>
-            <p>
-              Вы заслуживаете только самые надежные замки для защиты вашего дома. Мы представляем вам лучший выбор замков от Philips.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- Slider Categories -->
   <section class="categories">
     <div class="wrapper">
       <h2 class="wrapper-title">Категории</h2>
@@ -121,7 +182,31 @@
       </div>
     </div>
   </section>
+  <!-- / Slider Categories -->
+  
+  <!-- About Us -->
+  <section class="aboutUs">
+    <div class="wrapper">
+      <div class="aboutUs-inner">
+        <img class="aboutUs-photo" src="./assets/images/about-us.jpg" alt="">
+        <div class="aboutUs-col">
+          <h2 class="wrapper-title">Сделай шаг к безопасности с Philips</h2>
 
+          <div class="aboutUs-texts">
+            <p>
+              Philips - это бренд, на который можно положиться. Наши замки разработаны с использованием передовых технологий и протестированы на прочность и надежность. Мы гарантируем, что наши замки защитят вас и вашу семью от любых угроз.
+            </p>
+            <p>
+              Вы заслуживаете только самые надежные замки для защиты вашего дома. Мы представляем вам лучший выбор замков от Philips.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / About Us -->
+
+  <!-- Advantages -->
   <section class="advantages">
     <div class="wrapper">
       <div class="advantages-inner">
@@ -149,8 +234,10 @@
       </div>
     </div>
   </section>
+  <!-- / Advantages -->~
 
-  <section class="locks">
+  <!-- Slider Locks -->
+  <!-- <section class="locks">
     <div class="wrapper">
       <h2 class="wrapper-title">Хиты продаж</h2>
       <div class="slider-block">
@@ -420,10 +507,11 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- Slider Locks -->
 
-
-  <section class="projects">
+  <!-- Slider Projects -->
+  <!-- <section class="projects">
     <div class="wrapper">
       <div class="wrapper-header-withSb">
         <h2 class="wrapper-title">Проекты</h2>
@@ -492,9 +580,11 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- / Slider Projects -->
 
-  <section class="partners">
+  <!-- Slider Partners -->
+  <!-- <section class="partners">
     <div class="wrapper">
       <h2 class="wrapper-title">Наши партнеры</h2>
       <div class="partners-inner" id="partners">
@@ -521,10 +611,53 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- / Slider Partners -->
 
+  <!-- About Safe -->
+  <!-- <section class="aboutSafe">
+    <div class="wrapper">
+      <div class="wrapper-header-withSb">
+        <h2 class="wrapper-title">Двойная защита - двойная уверенность!</h2>
+        <p class="wrapper-subtitle">Компания Philips представляет свои сейфы, оснащенные двойной независимой электронной системой, что обеспечивает высокий уровень безопасности ваших ценностей.</p>
+      </div>
 
-  <section class="gallery">
+      <div class="aboutSafe-inner">
+        <div class="aboutSafe-content">
+          <div class="aboutSafe-item">
+            <div class="aboutSafe-item-icon"></div>
+            <h3 class="aboutSafe-item-title">Двойная независимая электронная система</h3>
+            <p class="aboutSafe-item-description">Два независимых электронных замка обеспечивают двойную защиту от несанкционированного доступа.</p>
+          </div>
+
+          <div class="aboutSafe-item">
+            <div class="aboutSafe-item-icon"></div>
+            <h3 class="aboutSafe-item-title">Датчик отпечатков пальцев</h3>
+            <p class="aboutSafe-item-description">Дополнительный уровень безопасности, который позволяет открыть сейф только при предъявлении верного отпечатка пальца.</p>
+          </div>
+
+          <div class="aboutSafe-item">
+            <div class="aboutSafe-item-icon"></div>
+            <h3 class="aboutSafe-item-title">Система двойной проверки</h3>
+            <p class="aboutSafe-item-description">Гарантирует, что только вы имеете доступ к содержимому сейфа.</p>
+          </div>
+
+          <div class="aboutSafe-item">
+            <div class="aboutSafe-item-icon"></div>
+            <h3 class="aboutSafe-item-title">Бесключевая панель управления</h3>
+            <p class="aboutSafe-item-description">Сделает процесс использования сейфа максимально удобным и простым.</p>
+          </div>
+        </div>
+        <div class="aboutSafe-preview">
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- / About Safe -->
+
+  <!-- Gallery -->
+  <!-- <section class="gallery">
     <div class="wrapper">
       <div class="gallery-inner">
         <div class="gallery-photos">
@@ -544,9 +677,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- / Gallery -->
 
-  <footer class="footer">
+  <!-- Footer -->
+  <!-- <footer class="footer">
     <div class="wrapper">
       <div class="footer-inner">
         <div class="footer-col">
@@ -585,9 +720,11 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  <!-- / Footer -->
   
-  <div class="modal">
+  <!-- Modal Gallery -->
+  <!-- <div class="modal">
     <div class="wrapper">
       <div class="modal-inner">
         <button class="modal-exit">
@@ -630,7 +767,8 @@
         <p class="review-comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </div>
     </div>
-  </div>
+  </div> -->
+  <!-- / Modal Gallery -->
 
   <!-- JS -->
   <script src="./assets/js/jquery.min.js"></script>

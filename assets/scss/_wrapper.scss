@@ -22,5 +22,27 @@
     }
     margin-bottom: 30px;
   }
+  
+  // Adaptation
+  @media (max-width: 1200px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 992px) {
+    &-title {
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 576px) {
+  }
+
+  @media (max-width: 380px) {
+  }
 }
   
