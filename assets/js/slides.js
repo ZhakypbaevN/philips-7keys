@@ -3,8 +3,8 @@ $('#intro-slider').slick({
   infinite: true,
   speed: 500,
   arrows: true,
-  // autoplay: true,
-  // autoplaySpeed: 10000,
+  autoplay: true,
+  autoplaySpeed: 10000,
   cssEase: 'linear'
 });
 
@@ -14,7 +14,7 @@ $('#partners').slick({
   slidesToScroll: 1,
   autoplay: true,
   speed: 500,
-  autoplaySpeed: 500,
+  autoplaySpeed: 10000,
 });
 
 $('#categories-list').slick({
