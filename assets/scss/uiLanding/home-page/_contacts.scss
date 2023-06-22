@@ -37,5 +37,91 @@
   &-map {
     height: 335px;
     background-color: $gray-light-color;
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      grid-gap: 6px;
+      margin-bottom: 10px;
+
+      & svg {
+        display: block;
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .contacts-block {
+    grid-template-columns: 1fr 500px;
+  }
+
+  .contacts-map {
+    height: 335px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts-block {
+    grid-template-columns: 1fr 400px;
+  }
+
+  .contacts-form-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contacts-map {
+    height: 250px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contacts-data {
+    & p,
+    & a {
+      margin-bottom: 10px;
+    }
+  }
+
+  .contacts-form-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contacts-map {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-block {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .contacts-form-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-form-top-input {
+    margin-bottom: 10px;
+  }
+
+.contacts-link {
+    & svg {
+      height: 14px;
+      width: 14px;
+    }
+  }
+
+  .contacts-map {
+    height: 180px;
   }
 }

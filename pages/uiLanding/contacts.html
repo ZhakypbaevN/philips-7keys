@@ -8,25 +8,84 @@
   <title>Электронные замки Philips</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header header-main big">
     <div class="wrapper">
       <div class="header-inner">
         <div class="header-col">
-          <a class="header-logo" href="../../index.html">
+          <a class="header-logo" href="#">
             <img src="../../assets/images/logo.svg" alt="">
           </a>
-          <a class="header-link line" href="../../index.html">
+          <a class="header-link line desktop" href="#">
             <p class="header-text">Главная</p>
           </a>
-          <a class="header-link line" href="./catalog.html">
-            <p class="header-text">Каталог</p>
-          </a>
-          <a class="header-link line" href="./services.html">
+          <div class="header-catalog-wrapper desktop">
+            <a class="header-link" href="./catalog.html">
+              <p class="header-text">Каталог</p>
+              <svg><use xlink:href="../../assets/images/sprite.svg#arrow-down"></use></svg>
+            </a>
+            <div class="header-catalog">
+              <div class="wrapper">
+                <div class="header-catalog-inner">
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="../../assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="../../assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="../../assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="../../assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                  <a class="header-catalog-item" href="#">
+                    <img class="categories-preview" src="../../assets/images/category/category-1.jpg" alt="">
+                    <div>
+                      <h3 class="categories-title">Нажимная ручка</h3>
+                      <p class="categories-text">12 товаров</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="header-link line desktop" href="./services.html">
             <p class="header-text">Услуги</p>
           </a>
         </div>
 
-        <div class="header-col">
+        <div class="header-col desktop">
+          <div class="header-lang">
+            <button class="header-lang-btn">
+              <p class="header-text">RU</p>
+              <svg><use xlink:href="../../assets/images/sprite.svg#arrow-down"></use></svg>
+            </button>
+
+            <div class="header-lang-dropdown">
+              <button class="header-lang-option active">
+                <p>RU</p>
+              </button>
+              <button class="header-lang-option">
+                <p>KZ</p>
+              </button>
+            </div>
+          </div>
           <a class="header-link line" href="./contacts.html">
             <p class="header-text">Контакты</p>
           </a>
@@ -38,7 +97,7 @@
     </div>
   </header>
 
-  <!-- <div class="wrapper">
+  <div class="wrapper">
     <div class="wrapper-title">Контакты</div>
 
     <div class="contacts-block top">
@@ -69,33 +128,52 @@
     </div>
 
     <div class="contacts-block">
-      <p>г. Алматы, <br> улица Ауэзова, 130</p>
+      <div>
+        <p>г. Алматы, <br> улица Ауэзова, 130</p>
+        <br>
+        <br>
+
+        <a href="https://go.2gis.com/r1ym83" class="contacts-map-link" target="_blank">
+          <svg><use xlink:href="../../assets/images/sprite.svg#pin"></use></svg>
+          <p class="line">Открыть на 2ГИС</p>
+        </a><br>
+
+        <a href="https://yandex.com/maps/-/CCUD5OFJSD" class="contacts-map-link" target="_blank">
+          <svg><use xlink:href="../../assets/images/sprite.svg#pin"></use></svg>
+          <p class="line">Открыть на Яндекс карте</p>
+        </a><br>
+
+        <a href="https://goo.gl/maps/e6ABnR8KSE6mMqkX6" class="contacts-map-link" target="_blank">
+          <svg><use xlink:href="../../assets/images/sprite.svg#pin"></use></svg>
+          <p class="line">Открыть на Google карте</p>
+        </a><br>
+      </div>
 
       <div id="map" class="contacts-map">
 
       </div>
     </div>
-  </div> -->
+  </div>
 
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="wrapper">
       <div class="footer-inner">
         <div class="footer-col">
           <a class="footer-logo" href="#">
-            <svg><use xlink:href="../../assets/images/sprite.svg#logo-white"></use></svg>
+            <img src="../../assets/images/logo-white.svg" alt="">
           </a>
           <p class="footer-text">2023 ТОО 7keys.kz</p>
           <p class="footer-text">© Все права защищены</p>
         </div>
         <div class="footer-col">
-          <a class="footer-link line white" href="#">
+          <a class="footer-link line white" href="../../index.html">
             <p class="footer-text">Главная</p>
           </a>
-          <a class="footer-link line white" href="#">
+          <a class="footer-link line white" href="./catalog.html">
             <p class="footer-text">Каталог</p>
           </a>
-          <a class="footer-link line white" href="#">
+          <a class="footer-link line white" href="./contacts.html">
             <p class="footer-text">Контакты</p>
           </a>
           <a class="footer-link line white" href="#">
@@ -117,19 +195,19 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
 	</script>
   <script>
     let center = [43.228388, 76.905840];
-
+    
     function init() {
       let map = new ymaps.Map('map', {
         center: center,
         zoom: 17
       });
-
+    
       map.controls.remove('geolocationControl'); // удаляем геолокацию
       map.controls.remove('searchControl'); // удаляем поиск
       map.controls.remove('trafficControl'); // удаляем контроль трафика
@@ -138,8 +216,13 @@
       map.controls.remove('zoomControl'); // удаляем контрол зуммирования
       map.controls.remove('rulerControl'); // удаляем контрол правил
       map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+    
+      let placemark = new ymaps.Placemark(center, {
+        hintContent: 'Seven Keys Company',
+      });
+      map.geoObjects.add(placemark);
     }
-
+    
     ymaps.ready(init);
   </script>
 </body>
