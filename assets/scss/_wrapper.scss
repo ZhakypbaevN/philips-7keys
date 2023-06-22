@@ -4,8 +4,8 @@
   padding: 0 40px;
   margin: 0 auto;
 
-  &.block {
-    margin: 60px 0 70px;
+  &-block {
+    margin: 120px 0;
   }
 
   &-title {
@@ -26,9 +26,17 @@
   // Adaptation
   @media (max-width: 1200px) {
     padding: 0 30px;
+
+    &-block {
+      margin: 100px 0;
+    }
   }
 
   @media (max-width: 992px) {
+    &-block {
+      margin: 90px 0;
+    }
+
     &-title {
       font-size: 30px;
       margin-bottom: 24px;
@@ -44,12 +52,22 @@
 
   @media (max-width: 768px) {
     padding: 0 20px;
+
+    &-block {
+      margin: 70px 0;
+    }
   }
 
   @media (max-width: 576px) {
+    &-block {
+      margin: 60px 0;
+    }
   }
 
   @media (max-width: 380px) {
+    &-block {
+      margin: 50px 0;
+    }
   }
 }
   

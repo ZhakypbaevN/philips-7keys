@@ -125,8 +125,8 @@ img,
   padding: 0 40px;
   margin: 0 auto;
 }
-.wrapper.block {
-  margin: 60px 0 70px;
+.wrapper-block {
+  margin: 120px 0;
 }
 .wrapper-title {
   font-weight: 700;
@@ -145,8 +145,14 @@ img,
   .wrapper {
     padding: 0 30px;
   }
+  .wrapper-block {
+    margin: 100px 0;
+  }
 }
 @media (max-width: 992px) {
+  .wrapper-block {
+    margin: 90px 0;
+  }
   .wrapper-title {
     font-size: 30px;
     margin-bottom: 24px;
@@ -162,7 +168,21 @@ img,
   .wrapper {
     padding: 0 20px;
   }
+  .wrapper-block {
+    margin: 70px 0;
+  }
 }
+@media (max-width: 576px) {
+  .wrapper-block {
+    margin: 60px 0;
+  }
+}
+@media (max-width: 380px) {
+  .wrapper-block {
+    margin: 50px 0;
+  }
+}
+
 .header {
   width: 100%;
   position: relative;
@@ -1032,24 +1052,6 @@ button.like.liked svg {
     padding: 0 20px;
   }
 }
-.main section {
-  margin: 70px 0 90px;
-}
-@media (max-width: 1200px) {
-  .main section {
-    margin: 60px 0 80px;
-  }
-}
-@media (max-width: 992px) {
-  .main section {
-    margin: 50px 0 70px;
-  }
-}
-@media (max-width: 768px) {
-  .main section {
-    margin: 40px 0 60px;
-  }
-}
 .intro {
   margin: 0px !important;
 }
@@ -1508,7 +1510,80 @@ button.like.liked svg {
   font-size: 28px;
   color: #212121;
 }
-
+@media (max-width: 1200px) {
+  .gallery-inner {
+    grid-gap: 40px;
+  }
+  .gallery-photos {
+    width: 720px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-col .wrapper-title {
+    margin-bottom: 14px;
+  }
+  .gallery-col p {
+    margin-bottom: 50px;
+  }
+  .gallery-link {
+    font-size: 28px;
+  }
+}
+@media (max-width: 992px) {
+  .gallery-inner {
+    grid-gap: 30px;
+  }
+  .gallery-photos {
+    width: 670px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-col .wrapper-title {
+    margin-bottom: 14px;
+  }
+  .gallery-col p {
+    margin-bottom: 40px;
+  }
+  .gallery-link {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .gallery-photos {
+    grid-row: 2/3;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-col .wrapper-title {
+    margin-bottom: 14px;
+  }
+  .gallery-col p {
+    margin-bottom: 20px;
+  }
+  .gallery-link {
+    font-size: 22px;
+  }
+  .gallery-col:last-child {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .gallery-inner {
+    grid-gap: 24px;
+  }
+  .gallery-col .wrapper-title {
+    margin-bottom: 14px;
+  }
+  .gallery-col p {
+    margin-bottom: 14px;
+  }
+  .gallery-link {
+    font-size: 20px;
+  }
+}
 .review-photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1557,6 +1632,7 @@ button.like.liked svg {
   line-height: 1;
   color: #B7B7B7;
 }
+
 .aboutSafe .wrapper-header-withSb {
   display: flex;
   flex-direction: column;
@@ -2270,4 +2346,59 @@ button.like.liked svg {
   line-height: 1.2;
   color: #16182D;
   color: #212121;
+}
+@media (max-width: 992px) {
+  .projects-item {
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px;
+  }
+  .projects-preview {
+    width: 236px;
+    height: 170px;
+    border-radius: 12px;
+  }
+  .projects-preview .logo {
+    top: 12px;
+    right: 18px;
+  }
+  .projects-subtitle {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 768px) {
+  .projects-item {
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px;
+  }
+  .projects-preview {
+    width: 222px;
+    height: 160px;
+    border-radius: 12px;
+  }
+  .projects-preview .logo {
+    width: 56px;
+    height: 20px;
+    top: 10px;
+    right: 16px;
+  }
+  .projects-subtitle {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 576px) {
+  .projects-preview {
+    width: 210px;
+    height: 150px;
+    border-radius: 12px;
+  }
+  .projects-preview .logo {
+    width: 56px;
+    height: 20px;
+    top: 10px;
+    right: 14px;
+  }
 }
